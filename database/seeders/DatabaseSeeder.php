@@ -22,9 +22,21 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         User::create([
-            'name' => 'testuser', // Username
-            'pin' => Hash::make('1234'), // Encrypted PIN (use any PIN like '1234')
-            'balance' => 1000, // Initial balance
+            'name' => 'lorran',
+            'pin' => Hash::make('1111'), // PIN for lorran
+            'balance' => 1500, // Initial balance
+        ]);
+
+        User::create([
+            'name' => 'mona',
+            'pin' => Hash::make('2222'), // PIN for mona
+            'balance' => 2000, // Initial balance
+        ]);
+
+        User::create([
+            'name' => 'abegail',
+            'pin' => Hash::make('3333'), // PIN for abegail
+            'balance' => 2500, // Initial balance
         ]);
     }
 }
